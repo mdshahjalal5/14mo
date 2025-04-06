@@ -1,8 +1,19 @@
+GET http://localhost:3000/api/v1/students?searchTerm=j
+GET http://localhost:3000/api/v1/students?filter=j
+GET http://localhost:3000/api/v1/students?sort=-name&page=1&limit=5
+
+GET http://localhost:3000/api/v1/students?sort=name
+
+GET http://localhost:3000/api/v1/students?sort=name&fields=-name,presentAddress
+GET http://localhost:3000/api/v1/students?fields=-name
+GET http://localhost:3000/api/v1/students?email=jamaljamal.doe@example.com
+
 GET  http://localhost:3000/api/v1/students
 
 GET  http://localhost:3000/api/v1/studentss
 
 GET  http://localhost:3000/api/v1/students/2030030001
+GET  http://localhost:3000/api/v1/students/ami
 
 GET  http://localhost:3000/api/v1/students/33333333
 

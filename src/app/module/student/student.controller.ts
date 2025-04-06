@@ -4,7 +4,7 @@ import sendResponse from "../../utils/sendResponse";
 import httpStatus from "http-status";
 
 const getAllStudents = catchAsync(async (req, res) => {
-  const allStudents = await StudentService.getAllStudentsFromDb();
+  const allStudents = await StudentService.getAllStudentsFromDb(req.query);
   res.status(200).json({
     success: true,
     message: "Retrieved All Students",

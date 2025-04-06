@@ -1,7 +1,7 @@
 GET  http://localhost:3000/api/v1/academic-department
 
 
-GET  http://localhost:3000/api/v1/academic-department/67e4fb55fd1c2d8c8724c076
+GET  http://localhost:3000/api/v1/academic-department/ami
 
 
 
@@ -22,6 +22,8 @@ Content-Type: application/json
   "name": "CSE",
   "academicFaculty": "67e3b6af204f1bb5a7f1926a"
 }
+
+
 
 
 

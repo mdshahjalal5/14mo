@@ -217,8 +217,16 @@ studentSchema.statics.isUserExists = async function (id) {
   next();
 }); */
 studentSchema.virtual("fullName").get(function () {
+  if (!this?.name) {
+    return "name not exist";
+  }
+
   return (
-    this.name.firstName + " " + this.name.middleName + " " + this.name.lastName
+    this?.name?.firstName +
+    " " +
+    this?.name?.middleName +
+    " " +
+    this?.name?.lastName
   );
 });
 
